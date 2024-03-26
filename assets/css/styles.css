@@ -8,9 +8,11 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(23, 100%, 50%);
-  --gradient-color: linear-gradient(90deg,
-                  hsl(23, 4%, 28%) 0%,
-                  hsl(23, 4%, 8%) 100%);
+  --gradient-color: linear-gradient(
+    90deg,
+    hsl(23, 4%, 28%) 0%,
+    hsl(23, 4%, 8%) 100%
+  );
   --white-color: hsl(0, 0%, 100%);
   --text-color: hsl(23, 4%, 60%);
   --body-color: hsl(23, 12%, 4%);
@@ -23,9 +25,9 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -45,8 +47,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -68,7 +70,10 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
 }
@@ -113,58 +118,108 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
 
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .nav-logo img {
+  width: 60px;
+} */
+
+.nav-logo {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+}
+
+.nav-close,
+.nav-toggle {
+  display: flex;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
 
 /* Navigation for mobile devices */
+@media screen and (max-width: 1150px) {
+  .nav-menu {
+    width: 100%;
+    position: fixed;
+    background-color: gray /* hsla(23, 12%, 4%, 0.2) */;
+    top: -100%;
+    left: 0;
+    padding-block: 5.5rem 4.5rem;
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    transition: top 0.4s;
+  }
 
+  .nav-list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
 
+  .nav-link {
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+    transition: color 0.4s;
+  }
+
+  .nav-link:hover {
+    color: var(--first-color);
+  }
+
+  .nav-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+}
 /* Show menu */
-
 
 /* Add blur header */
 
-
 /* Active link */
-
 
 /*=============== HOME ===============*/
 
-
 /*=============== BUTTON ===============*/
-
 
 /*=============== ABOUT ===============*/
 
-
 /*=============== FAVORITE ===============*/
-
 
 /* Swiper class */
 
-
 /*=============== MODEL ===============*/
-
 
 /*=============== SPONSOR ===============*/
 
-
 /*=============== FOOTER ===============*/
-
 
 /*=============== SCROLL BAR ===============*/
 
-
 /*=============== SCROLL UP ===============*/
 
-
 /* Show Scroll Up */
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */
