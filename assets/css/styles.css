@@ -255,7 +255,76 @@ img {
   white-space: nowrap;
 }
 
+.home-social {
+  display: grid;
+  justify-items: center;
+  row-gap: 6rem;
+  position: absolute;
+  top: 9rem;
+  left: -1.5rem;
+}
+
+.home-social-text {
+  position: relative;
+  rotate: 90deg;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.home-social-text::after {
+  content: "";
+  width: 48px;
+  height: 1px;
+  background-color: var(--text-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+  right: -64px;
+}
+
+.home-social-links {
+  display: grid;
+  row-gap: 0.75rem;
+}
+
+.home-social-link {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  transition: color 0.4s;
+}
+
+.home-social-link:hover {
+  color: var(--first-color);
+}
+
+.home-button {
+  justify-self: center;
+}
+
 /*=============== BUTTON ===============*/
+.button {
+  background: var(--gradient-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4rem;
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  transition: box-shadow 0.4s;
+}
+
+.button i {
+  color: var(--first-color);
+  font-size: 2rem;
+  font-weight: initial;
+}
+
+.button:hover {
+  box-shadow: 0 12px 32px hsla(23, 100%, 50%, 12);
+}
 
 /*=============== ABOUT ===============*/
 
