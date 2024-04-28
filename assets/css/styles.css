@@ -107,7 +107,7 @@ img {
   padding-block: 5rem 1rem;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h2-font-size);
   text-align: center;
   margin-bottom: 1.5rem;
@@ -195,6 +195,18 @@ img {
 }
 
 /* Add blur header */
+.blur-header::after {
+  content: "";
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(23, 12%, 4%, 0.2);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /* Active link */
 
@@ -327,10 +339,54 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about-container {
+  row-gap: 3.5rem;
+}
 
+.about-data {
+  text-align: center;
+}
+
+.about-description {
+  margin-bottom: 2.5rem;
+}
+
+.about-img {
+  width: 280px;
+  justify-self: center;
+}
 /*=============== FAVORITE ===============*/
+.favorite-container {
+  padding-top: 2rem;
+}
+
+.favorite-article {
+  width: 220px;
+  display: grid;
+  justify-items: center;
+  filter: blur(8px);
+  scale: 0.8;
+  transition: filter 0.3s, scale 0.3s;
+}
+
+.favorite-img {
+  width: 220px;
+  margin-bottom: 1.5rem;
+}
+
+.favorite-model {
+  background: var(--gradient-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4rem;
+  color: var(--white-color);
+}
 
 /* Swiper class */
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+  filter: blur(0);
+  scale: 1;
+}
 
 /*=============== MODEL ===============*/
 

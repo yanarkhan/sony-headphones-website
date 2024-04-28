@@ -32,8 +32,31 @@ const linkAction = () => {
 navLink.forEach((elemen) => elemen.addEventListener("click", linkAction));
 
 /*=============== ADD BLUR HEADER ===============*/
+const blurHeader = () => {
+  const header = document.getElementById("header");
+  // ketika di scroll lebih dari 50 piksel dari atas halaman, tambahkan kelas blur-header ke header
+  this.scrollY >= 50
+    ? header.classList.add("blur-header")
+    : header.classList.remove("blur-header");
+};
+
+window.addEventListener("scroll", blurHeader);
 
 /*=============== SWIPER FAVORITES ===============*/
+let swiper = new Swiper(".favorite-swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: "auto",
+  centeredSlides: "auto",
+  grabCursor: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+  },
+});
 
 /*=============== SHOW SCROLL UP ===============*/
 
