@@ -423,11 +423,34 @@ img {
 .model-tooltip-2 {
   transform: scaleX(-1);
 }
+
 .model-tooltip-1 .model-tooltip-text,
 .model-tooltip-2 .model-tooltip-text {
   transform: translate(60px, -40px) scaleX(-1);
 }
 
+.model-tooltip {
+  position: absolute;
+}
+
+.model-tooltip-1 {
+  top: 13rem;
+  left: 5rem;
+}
+
+.model-tooltip-2 {
+  top: 7rem;
+  right: 6.5rem;
+}
+
+.model-tooltip-3 {
+  bottom: 3rem;
+  right: 4rem;
+}
+
+.model-button {
+  justify-self: center;
+}
 /*=============== SPONSOR ===============*/
 
 /*=============== FOOTER ===============*/
