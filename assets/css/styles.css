@@ -610,7 +610,72 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .home-img {
+    width: 215px;
+  }
+
+  .home-title {
+    font-size: 4.5rem;
+  }
+
+  .model-img {
+    width: 200px;
+  }
+
+  .model-tooltip-text {
+    font-size: var(--smaller-font-size);
+    transform: translate(42px, -40px);
+  }
+
+  .model-tooltip-1 .model-tooltip-text,
+  .model-tooltip-2 .model-tooltip-text {
+    transform: translate(40px, -40px) scaleX(-1);
+  }
+
+  .model-tooltip-1 {
+    top: 6.1rem;
+    left: 0.7rem;
+  }
+
+  .model-tooltip-2 {
+    top: 2.7rem;
+    right: 2.7rem;
+  }
+
+  .model-tooltip-3 {
+    bottom: 1.5rem;
+    right: 0.2rem;
+  }
+
+  .sponsor-container {
+    gap: 4rem 2rem;
+  }
+}
 
 /* For medium devices */
+@media screen and (max-width: 576px) {
+  .about-container {
+    grid-template-columns: 380px;
+    justify-content: center;
+  }
+
+  .footer-data {
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 3rem;
+  }
+
+  .footer-group {
+    grid-column: initial;
+  }
+
+  .footer-social {
+    justify-content: initial;
+  }
+}
 
 /* For large devices */
