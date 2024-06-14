@@ -21,7 +21,7 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 8rem;
+  --biggest-font-size: 6rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -134,10 +134,6 @@ img {
   align-items: center;
 }
 
-/* .nav-logo img {
-  width: 60px;
-} */
-
 .nav-logo {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
@@ -227,7 +223,7 @@ img {
 }
 
 .home-img {
-  width: 220px;
+  width: 210px;
 }
 
 .home-title {
@@ -657,7 +653,7 @@ img {
 }
 
 /* For medium devices */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
   .about-container {
     grid-template-columns: 380px;
     justify-content: center;
@@ -735,6 +731,11 @@ img {
     display: none;
   }
 
+  .nav-list {
+    flex-direction: row;
+    column-gap: 4.5rem;
+  }
+
   .home-container {
     position: relative;
   }
@@ -808,5 +809,81 @@ img {
 
   .favorite-img {
     width: 500px;
+  }
+
+  .model-img {
+    width: 500px;
+  }
+
+  .model-tooltip-img {
+    width: initial;
+  }
+
+  .model-tooltip-text {
+    font-size: var(--normal-font-size);
+    padding: 0.5rem 1.25rem;
+    transform: translate(82px, -56px);
+  }
+
+  .model-tooltip-1 {
+    top: 16rem;
+    left: 6rem;
+  }
+
+  .model-tooltip-1 .model-tooltip-text {
+    transform: translate(82px, -56px) scaleX(-1);
+  }
+
+  .model-tooltip-2 {
+    transform: initial;
+    top: 7.5rem;
+    right: 3.5rem;
+  }
+
+  .model-tooltip-2 .model-tooltip-text {
+    transform: translate(82px, -56px);
+  }
+
+  .model-tooltip-3 {
+    right: 4.5rem;
+    bottom: 4rem;
+  }
+
+  .sponsor-container {
+    column-gap: 7.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .footer {
+    padding-bottom: 3rem;
+  }
+
+  .footer-data {
+    column-gap: 6rem;
+  }
+
+  .footer-form {
+    grid-template-columns: 1fr max-content;
+    background-color: var(--container-color);
+    padding: 0.5rem;
+    border-radius: 4rem;
+    width: 380px;
+  }
+
+  .footer-social {
+    column-gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .footer-social-link {
+    font-size: 1.5rem;
+  }
+
+  .footer-copy {
+    margin-top: 7.5rem;
+  }
+
+  .scrollup {
+    right: 3rem;
   }
 }
