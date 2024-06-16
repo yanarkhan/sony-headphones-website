@@ -92,3 +92,19 @@ const scrollActive = () => {
 window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 1500,
+  delay: 300,
+  // reset: true, // Animations repeat
+});
+
+sr.reveal(".home-social, .favorite-container, .sponsor-container, .footer");
+sr.reveal(".home-title span:nth-child(1)", { origin: "left", opacity: 1 });
+sr.reveal(".home-title span:nth-child(2)", { origin: "left", opacity: 1 });
+sr.reveal(".home-title span:nth-child(3)", { origin: "right", opacity: 1 });
+sr.reveal(".home-title span:nth-child(4)", { origin: "right", opacity: 1 });
+sr.reveal(".home-tooltip, .home-button, .model-button", { origin: "bottom" });
+sr.reveal(".about-data", { origin: "left" });
+sr.reveal(".about-img, .model-tooltip", { origin: "right" });
