@@ -140,6 +140,23 @@ img {
   color: var(--first-color);
 }
 
+.nav-list {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.nav-link {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  transition: color 0.4s;
+}
+
+.nav-link:hover {
+  color: var(--first-color);
+}
+
 .nav-close,
 .nav-toggle {
   display: flex;
