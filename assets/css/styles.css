@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(23, 100%, 50%);
+  --first-color: #165b65;
   --gradient-color: linear-gradient(
     90deg,
     hsl(23, 4%, 28%) 0%,
@@ -350,7 +350,7 @@ img {
 }
 
 .button:hover {
-  box-shadow: 0 12px 32px hsla(23, 100%, 50%, 12);
+  box-shadow: 0 12px 32px #b2c8bd;
 }
 
 /*=============== ABOUT ===============*/
