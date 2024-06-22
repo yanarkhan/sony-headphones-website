@@ -6,8 +6,7 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: #165b65;
+  --first-color: rgb(118, 171, 174);
   --gradient-color: linear-gradient(
     90deg,
     hsl(23, 4%, 28%) 0%,
