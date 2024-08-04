@@ -47,7 +47,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 - Icons by [Remixicon](https://remixicon.com/).
 - Slider functionality by [Swiper](https://swiperjs.com/).
 - Scroll animations by [ScrollReveal](https://scrollrevealjs.org/).
-
-```
-
-```
