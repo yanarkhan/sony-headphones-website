@@ -31,7 +31,7 @@ To run this project locally, follow these steps:
 
 ## Deployment
 
-The project has been deployed and is live at: [Sony Headphones Website](https://yanarkhan.github.io/sony-headphones-website)
+The project has been deployed and is live at: [Sony Headphones Website](https://sony-headphones-website.vercel.app/)
 
 ## License
 
