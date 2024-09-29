@@ -4,17 +4,16 @@ Welcome to the **Sony Headphones Website** project! This is a fully responsive w
 
 ## Features
 
-- **Responsive Design**: The website adapts seamlessly to various screen sizes, ensuring a consistent experience across all devices.
-- **Product Showcase**: Displays a range of Sony headphones with detailed information.
-- **Smooth Animations**: Enhanced UI/UX with smooth transitions and animations.
-- **Contact Form**: A functional contact form for users to reach out with inquiries or feedback.
+- 🎨 **Responsive Design**: The website adapts seamlessly to various screen sizes, ensuring a consistent experience across all devices.
+- 🎧 **Product Showcase**: Displays a range of Sony headphones with detailed information.
+- 💻 **Smooth Animations**: Enhanced UI/UX with smooth transitions and animations.
+- 📧 **Contact Form**: A functional contact form for users to reach out with inquiries or feedback.
 
 ## Technologies Used
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-
+- 🌐 **HTML5**
+- 🎨 **CSS3**
+- ⚙️ **JavaScript**
 
 ## Installation
 
@@ -30,9 +29,9 @@ To run this project locally, follow these steps:
    ```
 3. Open `index.html` in your preferred web browser.
 
-## Contribution
+## Deployment
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+The project has been deployed and is live at: [Sony Headphones Website](https://yanarkhan.github.io/sony-headphones-website)
 
 ## License
 
@@ -40,4 +39,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-Created by [Ryan Arkhan Pardiansyah](https://github.com/yanarkhan) - feel free to contact me!
+Created by [Ryan Arkhan](https://github.com/yanarkhan) - feel free to contact me!
